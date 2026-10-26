@@ -1,146 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>IFSC 11003 - Prototype</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Student Name" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Style Sheet -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student-created website redesign inspired by Boulevard Bread Company in Little Rock, Arkansas.">
+    <title>Boulevard Bread Company | Bakery & Café</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <a class="visually-hidden" href="#main-content">Skip to main content</a>
-  <header class="primary">
-    <h1><a href="index.html">Building the Modern Web</a></h1>
-    <p class="subtitle">HTML5, CSS, JavaScript Fundamentals</p>
-    <nav class="primary container" aria-label="Primary">
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="primary" id="home">
+        <p class="eyebrow">ARTISAN BAKERY · CAFÉ · HANDCRAFTED FOOD</p>
+        <h1>Boulevard Bread Company</h1>
+        <p class="tagline">Freshly baked. Thoughtfully made. Shared together.</p>
 
-  <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
-  <main id="main-content" class="container">
+        <nav class="primary" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Our Favorites</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+            </ul>
 
-    <section id="content">
-      <h2>Introduction to Web Design</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laudantium laboriosam veritatis optio adipisci consectetur. Aliquid omnis odit rem, neque accusantium obcaecati debitis laudantium repellendus temporibus assumenda aperiam provident ex officia suscipit voluptatum, aspernatur adipisci hic, dicta unde? Incidunt velit maiores repellendus, quos fugiat amet ducimus reiciendis cum ratione expedita at ex eos. Architecto consectetur numquam iure dolore earum quo inventore quam facere praesentium amet quae, modi hic atque voluptatibus, aut sed aperiam ipsam accusantium.
-      </p>
-    </section>
+            <a class="order-button"
+               href="https://www.boulevardbread.com/locations/"
+               target="_blank"
+               rel="noopener noreferrer">
+                ORDER ONLINE
+            </a>
+        </nav>
+    </header>
 
-    <section id="blog" aria-labelledby="recent-posts">
-      <h2 id="recent-posts">Recent Posts</h2>
+    <main id="content" class="container">
 
-      <article class="post">
-        <header>
-          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
+        <section class="intro">
+            <p class="section-label">WELCOME TO BOULEVARD</p>
+            <h2>Good food brings people together.</h2>
+            <p>
+                From freshly baked artisan bread to carefully prepared
+                sandwiches and coffee, Boulevard Bread Company is a place
+                to start your morning, meet a friend, or enjoy a delicious
+                meal made with care.
+            </p>
+            <a class="text-link"
+               href="https://www.boulevardbread.com/locations/">
+                Explore Our Locations →
+            </a>
+        </section>
 
-          <figure>
-            <img src="https://placehold.co/300x200" alt="Placeholder image" />
-            <figcaption>Image Caption</figcaption>
-          </figure>
+        <section id="blog">
+            <h2 class="section-heading">A Taste of Boulevard</h2>
+            <p class="section-description">
+                Discover some of the bakery and café favorites.
+            </p>
 
-          <h3><a href="#" rel="bookmark">Article Title</a></h3>
-        </header>
+            <!-- FIRST ARTICLE: ARTISAN BREAD -->
+            <article class="post">
+                <figure>
+                    <img
+                        src="https://images.squarespace-cdn.com/content/v1/5a4d20b4f6576ef69d4c3284/1515012464892-FE5D0GPDE0MK7GFABIJA/EAT_Boulevard+Bread+Pic.jpg"
+                        alt="Freshly baked artisan bread">
+                    <figcaption>Made fresh with care</figcaption>
+                </figure>
 
+                <div class="post-content">
+                    <p class="category">FROM THE BAKERY</p>
+                    <h3>Artisan Bread</h3>
+                    <p>
+                        Discover a variety of breads, including baguettes,
+                        ciabatta, and sourdough, baked for everyday meals
+                        and special moments.
+                    </p>
+                    <a href="https://www.boulevardbread.com/locations/">
+                        Explore the bread menu →
+                    </a>
+                </div>
+            </article>
+
+            <!-- SECOND ARTICLE: COFFEE AND SWEET TREATS -->
+            <article class="post">
+                <figure>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-fhlhTx2HODjn_U-I3GdtigJjXKyoSpW_vkZ4W8d6-TmKJ8_TE2P71Q&s=10"
+                        alt="A freshly prepared coffee drink">
+                    <figcaption>A perfect pairing for your day</figcaption>
+                </figure>
+
+                <div class="post-content">
+                    <p class="category">COFFEE &amp; SWEET TREATS</p>
+                    <h3>Coffee &amp; Sweet Treats</h3>
+                    <p>
+                        Enjoy a freshly brewed coffee paired with a
+                        delicious pastry, cookie, or other sweet treat.
+                        The perfect combination for a relaxing morning
+                        or afternoon break.
+                    </p>
+                    <a href="https://www.boulevardbread.com/locations/">
+                        Explore the menu →
+                    </a>
+                </div>
+            </article>
+
+            <!-- THIRD ARTICLE: SANDWICHES AND LUNCH -->
+            <article class="post">
+    <figure>
+        <img
+            src="https://th.bing.com/th/id/OIP.0BlivviuvMD4EKzQgWOjBwAAAA?w=148&h=198&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+            alt="Fresh sandwich and lunch selection">
+        <figcaption>Fresh ingredients, satisfying flavors</figcaption>
+    </figure>
+
+    <div class="post-content">
+        <p class="category">FROM THE KITCHEN</p>
+        <h3>Sandwiches &amp; Lunch</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea placeat porro esse sit iusto exercitationem provident? Inventore, aliquam temporibus? Nisi minima mollitia, ex optio alias aperiam vitae omnis nulla molestias!
+            Enjoy handcrafted sandwiches, salads, and other
+            lunch favorites made with quality ingredients
+            and freshly prepared food.
         </p>
-
-        <footer class="post-meta">
-          Posted by <a href="#">Post Author</a>
-        </footer>
-      </article>
-
-      <article class="post">
-        <header>
-          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
-
-          <figure>
-            <img src="https://placehold.co/300x200" alt="Placeholder image" />
-            <figcaption>Image Caption</figcaption>
-          </figure>
-
-          <h3><a href="#" rel="bookmark">Article Title</a></h3>
-        </header>
-
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea placeat porro esse sit iusto exercitationem provident? Inventore, aliquam temporibus? Nisi minima mollitia, ex optio alias aperiam vitae omnis nulla molestias!
-        </p>
-
-        <footer class="post-meta">
-          Posted by <a href="#">Post Author</a>
-        </footer>
-      </article>
-
-      <article class="post">
-        <header>
-          <time class="post-date" datetime="2026-01-01">January 1, 2026</time>
-
-          <figure>
-            <img src="https://placehold.co/300x200" alt="Placeholder image" />
-            <figcaption>Image Caption</figcaption>
-          </figure>
-
-          <h3><a href="#" rel="bookmark">Article Title</a></h3>
-        </header>
-
-        <p>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea placeat porro esse sit iusto exercitationem provident? Inventore, aliquam temporibus? Nisi minima mollitia, ex optio alias aperiam vitae omnis nulla molestias!
-        </p>
-
-        <footer class="post-meta">
-          Posted by <a href="#">Post Author</a>
-        </footer>
-      </article>
-
-    </section>
-
-  </main>
-  <aside aria-label="Sidebar">
-    <div class="container">
-
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item</h2>
-        </header>
-
-        <p>
-          Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula...
-          <a href="#">Read More &raquo;</a>
-        </p>
-
-        <footer>Widget Footer</footer>
-      </article>
-
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item</h2>
-        </header>
-
-        <p>
-          Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula...
-          <a href="#">Read More &raquo;</a>
-        </p>
-
-        <footer>Widget Footer</footer>
-      </article>
-
+        <a href="https://www.boulevardbread.com/locations/">
+            Explore the lunch menu →
+        </a>
     </div>
-  </aside>
+</article>
+                    <p>
+                        Enjoy handcrafted sandwiches, salads, and other
+                        lunch favorites made with quality ingredients
+                        and freshly prepared food.
+                    </p>
+                    <a href="https://www.boulevardbread.com/locations/">
+                        Explore the lunch menu →
+                    </a>
+                </div>
+            </article>
+        </section>
 
-  <footer class="primary">
-    <p>&copy; 2026 Your Name</p>
-  </footer>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <p class="section-label">OUR STORY</p>
+            <h2>Made with care, shared with community.</h2>
+            <p>
+                Boulevard Bread Company opened in 2000 and has grown into
+                a local bakery, restaurant, and coffee house serving
+                communities across Central Arkansas. Its approach centers
+                on handcrafted food, quality ingredients, and welcoming
+                places where people can connect.
+            </p>
+            <blockquote>
+                Good bread, good food, and good company make everyday
+                moments special.
+            </blockquote>
+            <a class="text-link"
+               href="https://www.boulevardbread.com/who-we-are/">
+                Learn More About Boulevard →
+            </a>
+        </section>
+
+        <!-- MORE TO EXPLORE -->
+        <aside id="practice">
+            <h2 class="section-heading">More to Explore</h2>
+
+            <section class="widget">
+                <h3>Daily Breads &amp; Sweets</h3>
+                <p>
+                    Explore the bakery's selection of breads, muffins,
+                    cookies, cakes, and seasonal treats.
+                </p>
+                <a href="https://www.boulevardbread.com/locations/">
+                    View Menus →
+                </a>
+                <footer class="widget-footer">
+                    Fresh from the bakery
+                </footer>
+            </section>
+
+            <section class="widget">
+                <h3>Find Your Boulevard</h3>
+                <p>
+                    Explore locations, opening hours, menus, and ordering
+                    information on the official website.
+                </p>
+                <a href="https://www.boulevardbread.com/locations/">
+                    Find a Location →
+                </a>
+                <footer class="widget-footer">
+                    Serving Central Arkansas
+                </footer>
+            </section>
+        </aside>
+
+        <!-- VISIT SECTION -->
+        <section id="visit">
+            <p class="section-label">COME SEE US</p>
+            <h2>Make Boulevard part of your day.</h2>
+            <p>
+                Whether you are stopping by for bread, coffee, breakfast,
+                or lunch, find the location that works best for you.
+            </p>
+            <a class="button-link"
+               href="https://www.boulevardbread.com/locations/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Locations &amp; Hours
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="primary">
+        <p>Boulevard Bread Company</p>
+        <p class="footer-note">
+            A student-created website redesign for an HTML and CSS project.
+        </p>
+        <p>© 2026 Student Web Design Project</p>
+        <a href="https://www.boulevardbread.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visit the Official Website
+        </a>
+    </footer>
 
 </body>
-
 </html>
