@@ -1,0 +1,34 @@
+main {
+  display: grid;
+  gap: 20px;
+  max-width: 80vw;
+  margin: 20px auto;
+
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas:
+    "header header"
+    "content blog"
+    "content aside"
+    "footer footer";
+}
+
+main > header.primary {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+}
+
+#blog {
+  grid-area: blog;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main > footer.primary {
+  grid-area: footer;
+}
